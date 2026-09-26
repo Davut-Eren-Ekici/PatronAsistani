@@ -1,0 +1,17 @@
+body{
+    background-color: #0f172a;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+
+}
+.form-kutusu{
+    background-color: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    padding: 20px;
+}
