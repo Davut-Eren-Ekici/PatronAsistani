@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+/* Form Tasarımı */
+#etkinlikFormu {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #334155;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.form-grup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 130px;
+}
+
+.form-grup label {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+input, select, button {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    color: #f8fafc;
+    padding: 10px 12px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    border-color: #3b82f6;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Günlük Akış Çizelgesi */
+#gunlukAkis {
+    width: 100%;
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.saat-dilimi {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.4);
+    min-height: 60px;
+}
+
+.saat-dilimi:last-child {
+    border-bottom: none;
+}
+
+.saat-dilimi-label {
+    font-weight: bold;
+    color: #64748b;
+    width: 50px;
+    font-size: 14px;
+}
+
+.etkinlik-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+/* Etkinlik Kartı */
+.etkinlik-kart {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    transition: all 0.2s;
+}
+
+/* Öncelik Çizgileri */
+.etkinlik-kart.yüksek { border-left: 4px solid #ef4444; }
+.etkinlik-kart.orta { border-left: 4px solid #f59e0b; }
+.etkinlik-kart.düşük { border-left: 4px solid #10b981; }
+
+/* Tamamlandı Durumu */
+.etkinlik-kart.tamamlandi {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.kart-sol {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kart-baslik {
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.kart-saat {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.kart-durum {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+}
+
+.kart-butonlar {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 14px;
+    height: auto;
+}
+
+.btn-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}

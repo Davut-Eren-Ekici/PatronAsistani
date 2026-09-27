@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patron Asistanı - Günlük Planlayıcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Patron Asistanı - Günlük Planlayıcı</h1>
+
+        <!-- Form Alanı -->
+        <form id="etkinlikFormu">
+            <div class="form-grup">
+                <label for="baslagicSaati">Başlangıç</label>
+                <input type="time" id="baslagicSaati" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="bitisSaati">Bitiş</label>
+                <input type="time" id="bitisSaati" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="etkinlikBaslik">Etkinlik Başlığı</label>
+                <input type="text" id="etkinlikBaslik" placeholder="Örn: Yönetim Toplantısı" required>
+            </div>
+
+            <div class="form-grup">
+                <label for="oncelik">Öncelik</label>
+                <select id="oncelik">
+                    <option value="Yüksek">Yüksek</option>
+                    <option value="Orta">Orta</option>
+                    <option value="Düşük">Düşük</option>
+                </select>
+            </div>
+
+            <button type="submit" id="eklebtn">Plana Ekle</button>
+        </form>
+
+        <!-- 24 Saatlik Çizelge -->
+        <div id="gunlukAkis"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
