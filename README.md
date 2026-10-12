@@ -6,6 +6,7 @@
 
 ---
 
+
 ## ✨ Özellikler
 
 - 🕒 **24 Saatlik Çizelge:** 00:00 - 23:00 arasındaki tüm saat dilimlerini kapsayan akıllı ve dinamik ajanda görünümü.
